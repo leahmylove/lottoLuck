@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image with Centered Icons</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /*
+         * Style the body to set up the full-page background image.
+         */
+        body {
+            /* Use a placeholder image URL since a local file isn't available */
+            background-image: url('./silentNight.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            margin: 0;
+            display: flex; /* Use flexbox to center content */
+            justify-content: center;
+            align-items: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /*
+         * Style the icon container to center the icons.
+         */
+        .icon-container {
+            display: flex;
+            gap: 2rem; /* Adds space between the two icons */
+        }
+    </style>
+</head>
+<body class="bg-gray-800">
+    <!-- <h1>GOD bless Us.</h1>
+    <div> -->
+    <div class="icon-container">
+        <!--
+         * First icon: a rounded div with an icon emoji inside, wrapped in an <a> tag.
+         * The `group` class on the <a> tag allows the hover effect to target the child div.
+         -->
+        <a href="./ultraLotto.html" class="group no-underline text-current">
+            <div class="bg-white/30 backdrop-blur-sm w-28 h-28 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 transform group-hover:scale-110 cursor-pointer">
+                <span class="text-5xl" style="color: aqua;">6/58</span>
+            </div>
+        </a>
+
+        <!--
+         * Second icon: a rounded div with an icon emoji inside, wrapped in an <a> tag.
+         -->
+        <a href="./superlotto.html" class="group no-underline text-current">
+            <div class="bg-white/30 backdrop-blur-sm w-28 h-28 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 transform group-hover:scale-110 cursor-pointer">
+                <span class="text-5xl" style="color: yellow;">6/48</span>
+            </div>
+        </a>
+    <!-- </div> -->
+    </div>
+
+</body>
+</html>
